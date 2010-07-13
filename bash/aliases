@@ -5,3 +5,5 @@ alias lsl='ls -laGh'
 alias cdc='cd ~/Code'
 
 alias g="git status"
+
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
