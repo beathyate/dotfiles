@@ -1,16 +1,7 @@
-autoload -U colors
-colors
 setopt prompt_subst
 PROMPT='
-%n@%m:%~ %{$fg_bold[black]%}$(vcprompt)
-→ %{$reset_color%}'
-
-# Set RPROMPT to have info show up on the right, too.
-
-#############################
-# Other Options
-
-# setopt PRINT_EXIT_VALUE
+%n@%m:%~ $(vcprompt)
+→ '
 
 setopt CORRECT
 setopt CORRECTALL
@@ -20,13 +11,6 @@ setopt share_history        # share command history data
 setopt HIST_IGNORE_SPACE
 setopt APPEND_HISTORY # write history only when closing
 setopt EXTENDED_HISTORY # add more info
-
-# Other tabbing options
-# setopt NO_AUTO_MENU
-# setopt BASH_AUTO_LIST
-
-#############################
-# Variables
 
 # Quote pasted URLs
 autoload url-quote-magic
