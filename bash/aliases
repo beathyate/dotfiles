@@ -6,4 +6,6 @@ alias cdc='cd ~/Code'
 
 alias g="git status"
 
+alias srv="passenger start"
+
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
