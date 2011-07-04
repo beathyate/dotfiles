@@ -1,2 +1,2 @@
 export EDITOR="mate -w"
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH:~/Code/dotfiles/bin
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH:~/Dropbox/Code/dotfiles/bin"

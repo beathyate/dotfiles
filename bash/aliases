@@ -2,7 +2,7 @@ alias tu='top -o cpu' # cpu
 alias tm='top -o vsize' # memory
 
 alias lsl='ls -laGh'
-alias cdc='cd ~/Code'
+alias cdc='cd ~/Dropbox/Code'
 
 alias g="git status"
 
