@@ -1,2 +1,2 @@
-export EDITOR="mate -w"
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH:~/Dropbox/Code/dotfiles/bin"
+export EDITOR="/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl -w"
+export PATH="~/.rbenv/bin:/usr/local/bin:/usr/local/sbin:$PATH:~/Dropbox/Code/dotfiles/bin"
