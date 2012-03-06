@@ -6,4 +6,4 @@ alias cdc='cd ~/Dropbox/Code'
 
 alias deploy="git push heroku master"
 
-alias subl="/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"
+alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"

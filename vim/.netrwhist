@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/goddamnhippie/Dropbox/Code/test_cramp/public'
+let g:netrw_dirhist_2='/Users/goddamnhippie/Dropbox/Code/test_cramp'
+let g:netrw_dirhist_3='/Users/goddamnhippie/Dropbox/Code/final_destination'
