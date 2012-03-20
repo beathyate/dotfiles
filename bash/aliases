@@ -2,8 +2,15 @@ alias tu='top -o cpu' # cpu
 alias tm='top -o vsize' # memory
 
 alias lsl='ls -laGh'
-alias cdc='cd ~/Dropbox/Code'
 
 alias deploy="git push heroku master"
 
 alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+
+function cdc {
+  if [ "$1" != "" ]; then
+    cd ~/Dropbox/Code/ && cd $1
+  else
+    cd ~/Dropbox/Code/
+  fi
+}
