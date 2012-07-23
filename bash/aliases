@@ -2,7 +2,6 @@ alias lsl='ls -laGh'
 alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
 alias brake="bundle exec rake"
 alias deploy="git push heroku"
-alias kipuapp="subl ~/Dropbox/Code/projects/kipu.sublime-project"
 
 function cdc {
   if [ "$1" != "" ]; then
