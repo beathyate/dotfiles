@@ -1,5 +1,7 @@
 require 'fileutils'
 
 task :install do
-  ln_s File.expand_path('profile'), File.expand_path("~/.profile")
+  %w[profile vim vimrc gvimrc].each do |dotfile|
+    ln_s File.expand_path(dotfile), File.expand_path("~/.#{dotfile}")
+  end
 end
