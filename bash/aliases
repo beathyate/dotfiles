@@ -1,6 +1,6 @@
 alias lsl='ls -laGh'
-alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
 alias brake="bundle exec rake"
+alias bem="bundle exec middleman"
 alias deploy="git push heroku"
 alias fst="bundle exec foreman start"
 
