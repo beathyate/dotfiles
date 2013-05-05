@@ -2,7 +2,7 @@ alias lsl='ls -laGh'
 alias brake="bundle exec rake"
 alias bem="bundle exec middleman"
 alias deploy="git push heroku"
-alias fst="bundle exec foreman start"
+alias fst="bundle exec foreman start -f Procfile.dev"
 
 function cdc {
   if [ "$1" != "" ]; then
