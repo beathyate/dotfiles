@@ -1,0 +1,3 @@
+[ text.html.markdown ]
+softWrap   = true
+wrapColumn = "Use Window Frame"
