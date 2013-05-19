@@ -1,8 +1,11 @@
 require 'fileutils'
 
-task :install do
-  %w[profile tm_properties middleman].each do |dotfile|
-    dotfile_path = File.expand_path "~/.#{dotfile}"
-    ln_s File.expand_path(dotfile), dotfile_path unless File.exists?(dotfile_path) || Dir.exists?(dotfile_path)
+task :default do
+  Dir['source/*'].each do |dotfile|
+    dotfile_name = dotfile.split('/').last
+    dotfile_path = File.expand_path "~/.#{dotfile_name}"
+
+    rm_r dotfile_path if File.exists? dotfile_path
+    ln_s File.expand_path(dotfile), dotfile_path
   end
 end
