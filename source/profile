@@ -5,6 +5,9 @@ export PATH="/usr/local/bin:/usr/local/sbin:$DOTFILES_BIN:$HEROKU_BIN:$POSTGRES_
 export RBENV_ROOT="/usr/local/var/rbenv"
 export EDITOR="/usr/local/bin/mate -w"
 
+# Temporary solution for Postgres.app DYLD problem (GH Issue 109)
+export DYLD_FALLBACK_LIBRARY_PATH="/Applications/Postgres.app/Contents/MacOS/lib:$DYLD_LIBRARY_PATH"
+
 PS1="\n\u@\h:\w \$(vcprompt)\n→ "
 
 alias lsl='ls -laGh'
