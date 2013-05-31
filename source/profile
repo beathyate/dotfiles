@@ -28,4 +28,12 @@ function cdc {
   fi
 }
 
+_cdc()
+{
+    local cur=${COMP_WORDS[COMP_CWORD]}
+    COMPREPLY=( $(compgen -W "$(ls ~/Dropbox/Code/)" -- $cur) )
+}
+
+complete -F _cdc cdc
+
 eval "$(rbenv init -)"
