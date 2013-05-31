@@ -16,6 +16,10 @@ alias bem="bundle exec middleman"
 alias deploy="git push heroku"
 alias fst="foreman start -f Procfile.dev"
 
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
 function cdc {
   if [ "$1" != "" ]; then
     cd ~/Dropbox/Code/ && cd $1
