@@ -1,39 +1,47 @@
+# requirements: homebrew, rbenv + ruby-build
+
+# environment variables
 export POSTGRES_BIN="/Applications/Postgres.app/Contents/MacOS/bin"
 export XCODE_BIN="/Applications/Xcode.app/Contents/Developer/usr/bin"
 export HEROKU_BIN="/usr/local/heroku/bin"
 export PATH="/usr/local/bin:/usr/local/sbin:$DOTFILES_BIN:$HEROKU_BIN:$POSTGRES_BIN:$XCODE_BIN:$PATH"
 export RBENV_ROOT="/usr/local/var/rbenv"
 export EDITOR="/usr/local/bin/mate -w"
+export CODE_DIR="$HOME/Dropbox/Code/"
 
-# Temporary solution for Postgres.app DYLD problem (GH Issue 109)
+# temporary solution for Postgres.app DYLD problem (GH Issue 109)
 export DYLD_FALLBACK_LIBRARY_PATH="/Applications/Postgres.app/Contents/MacOS/lib:$DYLD_LIBRARY_PATH"
 
+# requires vcprompt: brew install vcprompt
 PS1="\n\u@\h:\w \$(vcprompt)\n→ "
 
-alias lsl='ls -laGh'
-alias brake="bundle exec rake"
-alias bem="bundle exec middleman"
-alias deploy="git push heroku"
-alias fst="foreman start -f Procfile.dev"
-
+# bash_completion initializer
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+# code dir function and autocompletion
 function cdc {
   if [ "$1" != "" ]; then
-    cd ~/Dropbox/Code/ && cd $1
+    cd $CODE_DIR && cd $1
   else
-    cd ~/Dropbox/Code/
+    cd $CODE_DIR
   fi
 }
 
 _cdc()
 {
-    local cur=${COMP_WORDS[COMP_CWORD]}
-    COMPREPLY=( $(compgen -W "$(ls ~/Dropbox/Code/)" -- $cur) )
+  local cur=${COMP_WORDS[COMP_CWORD]}
+  COMPREPLY=( $(compgen -W "$(ls $CODE_DIR)" -- $cur) )
 }
-
 complete -F _cdc cdc
 
+# rbenv initialization
 eval "$(rbenv init -)"
+
+# aliases
+alias lsl='ls -laGh'
+alias brake="bundle exec rake"
+alias bem="bundle exec middleman"
+alias deploy="git push heroku"
+alias fst="foreman start -f Procfile.dev"
