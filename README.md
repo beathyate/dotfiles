@@ -6,8 +6,14 @@ To install:
 $ rake
 ```
 
-This will symlink all files and directories in `./source` to `~/.FILENAME`
+This will symlink all files and directories in `./source/*` to `~/.FILENAME`
 
 ## Requirements
 
-* `vcprompt` which can be installed via [homebrew](http://mxcl.github.io/homebrew/)
+* Xcode.app + Command Line Tools
+* Posgres.app
+* [homebrew](http://mxcl.github.io/homebrew/)
+* `rbenv` + `ruby-build` + `bundler`
+* `vcprompt`
+* Heroku Toolbelt
+* TextMate 2

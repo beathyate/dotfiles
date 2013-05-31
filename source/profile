@@ -1,5 +1,3 @@
-# requirements: homebrew, rbenv + ruby-build
-
 # environment variables
 export POSTGRES_BIN="/Applications/Postgres.app/Contents/MacOS/bin"
 export XCODE_BIN="/Applications/Xcode.app/Contents/Developer/usr/bin"
