@@ -37,6 +37,11 @@ _cdc()
 }
 complete -F _cdc cdc
 
+# http server on working directory
+function serve {
+  ruby -run -e httpd -- -p 5555 .
+}
+
 # rbenv initialization
 eval "$(rbenv init -)"
 
