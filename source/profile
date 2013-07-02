@@ -2,7 +2,7 @@
 export POSTGRES_BIN="/Applications/Postgres.app/Contents/MacOS/bin" # some *-config files conflict with homebrew
 export XCODE_BIN="/Applications/Xcode.app/Contents/Developer/usr/bin"
 export HEROKU_BIN="/usr/local/heroku/bin"
-export PATH="/usr/local/bin:/usr/local/sbin:$DOTFILES_BIN:$HEROKU_BIN:$POSTGRES_BIN:$XCODE_BIN:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$HEROKU_BIN:$POSTGRES_BIN:$XCODE_BIN:$PATH"
 export RBENV_ROOT="/usr/local/var/rbenv"
 export EDITOR="/usr/local/bin/mate -w"
 export CODE_DIR="$HOME/Dropbox/Code/"
