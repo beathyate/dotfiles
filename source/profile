@@ -1,5 +1,5 @@
 # environment variables
-export POSTGRES_BIN="/Applications/Postgres.app/Contents/MacOS/bin" # some *-config files conflict with homebrew
+export POSTGRES_BIN="/Applications/Postgres93.app/Contents/MacOS/bin" # some *-config files conflict with homebrew
 export XCODE_BIN="/Applications/Xcode.app/Contents/Developer/usr/bin"
 export HEROKU_BIN="/usr/local/heroku/bin"
 export PATH="/usr/local/bin:/usr/local/sbin:$HEROKU_BIN:$POSTGRES_BIN:$XCODE_BIN:$PATH"
