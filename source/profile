@@ -45,8 +45,7 @@ eval "$(rbenv init -)"
 
 # aliases
 alias lsl='ls -laGh'
-alias brake="bundle exec rake"
-alias bem="bundle exec middleman"
+alias bx="bundle exec"
 alias deploy="date && git push heroku"
 alias fst="foreman start -f Procfile.dev"
 alias rh="pbpaste | highlight --syntax=ruby --style zenburn -O rtf | pbcopy"
