@@ -2,3 +2,7 @@
 vim/tmp
 *.DS_Store
 *.netrwhist
+source/atom/.node-gyp
+source/atom/compile-cache
+source/atom/packages
+source/atom/storage
