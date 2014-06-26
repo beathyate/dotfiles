@@ -1,4 +1,0 @@
-Project Name
-============
-
-Project Instructions.
