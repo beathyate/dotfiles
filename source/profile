@@ -36,7 +36,7 @@ _cdc()
 complete -F _cdc cdc
 
 # http server on working directory
-function serve {
+function serve() {
   ruby -run -e httpd -- -p 5555 .
 }
 
@@ -56,4 +56,3 @@ eval "$(rbenv init -)"
 # aliases
 alias lsl='ls -laGh'
 alias bx="bundle exec"
-alias deploy="date && git push heroku"
