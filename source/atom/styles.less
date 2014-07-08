@@ -1,36 +1,34 @@
-/*
- * Your Stylesheet
- *
- * This stylesheet is loaded when Atom starts up and is reloaded automatically
- * when it is changed.
- *
- * If you are unfamiliar with LESS, you can read more about it here:
- * http://www.lesscss.org
- */
-
-.tree-view {
-
-}
+@darkest-color: rgb(10, 10, 12);
+@highlight-color: #2b303b;
 
 .item-views {
-  border-top: 5px solid #2b303b;
+  border-top: 8px solid @darkest-color;
+}
+
+.workspace {
+  background-color: @darkest-color;
+}
+
+.tab-bar .tab.active {
+  background-color: @darkest-color;
+
+  &:before {
+    background-color: @darkest-color;
+  }
 }
 
 .editor {
-  .indent-guide {
-    opacity: 0;
+  background-color: @darkest-color;
+
+  &.is-focused .selection .region {
+    background-color: @highlight-color;
   }
 
-  .cursor-line .indent-guide {
-    color: white;
-    opacity: 0.5;
+  .gutter {
+    background-color: @darkest-color;
   }
 
-  .cursor-line .indent-guide + .indent-guide:last-child {
-    opacity: 0;
+  .punctuation.separator.other {
+    color: #7587A6;
   }
-}
-
-.editor .cursor {
-
 }
