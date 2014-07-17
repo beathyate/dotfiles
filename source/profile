@@ -12,7 +12,7 @@ export CODE_DIR="$HOME/Code"
 export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
 
 # Simplify prompt
-PS1="$ "
+PS1="\n$ "
 
 # bash_completion initializer
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
