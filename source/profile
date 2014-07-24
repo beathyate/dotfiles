@@ -9,7 +9,7 @@ export EDITOR="/usr/local/bin/atom -w"
 export CODE_DIR="$HOME/Code"
 
 # use a more up-to-date certfile so we can use homebrew's openssl (required for Ruby 2+)
-export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
+export SSL_CERT_FILE="/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt"
 
 # Simplify prompt
 PS1="\n$ "
