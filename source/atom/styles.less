@@ -1,28 +1,28 @@
-@darkest-color: rgb(10, 10, 12);
-@highlight-color: #2b303b;
-@tab-bg-color: #1c1f26;
+@darkest-color: #222222;
+@highlight-color: #000000;
 
 .item-views {
   border-top: 8px solid @darkest-color;
+}
+
+.tree-view {
+  border-left: 8px solid @darkest-color;
+  background-color: @darkest-color;
+}
+
+.list-tree .selected:before {
+  background-color: @darkest-color;
 }
 
 .workspace, .tool-panel {
   background-color: @darkest-color;
 }
 
-.tab-bar {
-  background-color: @tab-bg-color;
+.tab-bar .tab.active {
+  background-color: @darkest-color;
 
-  .tab {
-    background-color: @tab-bg-color;
-
-    &.active {
-      background-color: @darkest-color;
-
-      &:before {
-        background-color: @darkest-color;
-      }
-    }
+  &:before {
+    background-color: @darkest-color;
   }
 }
 
