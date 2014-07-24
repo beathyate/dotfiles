@@ -54,5 +54,5 @@ function light() {
 eval "$(rbenv init -)"
 
 # aliases
-alias lsl='ls -laGh'
+alias lsl='pwd && ls -laGh'
 alias bx="bundle exec"
