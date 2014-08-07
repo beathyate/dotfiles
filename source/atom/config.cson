@@ -11,6 +11,7 @@
   'fontFamily': 'Menlo'
   'fontSize': 13
   'showIndentGuide': true
+  'softWrapAtPreferredLineLength': true
 'core':
   'themes': [
     'spacegray-dark-ui'
@@ -27,11 +28,14 @@
   'disabledPackages': [
     'travis-ci-status'
     'language-java'
+    'feedback'
+    'welcome'
+    'background-tips'
   ]
   'useReactEditor': true
 'tree-view':
-  'showOnRightSide': true
   'hideIgnoredNames': true
+  'showOnRightSide': true
 'whitespace':
   'ignoreWhitespaceOnCurrentLine': false
 'find-and-replace': {}
@@ -43,10 +47,6 @@
     'text.plain'
     'text.plain.null-grammar'
   ]
-'spell-check':
-  'grammars': [
-    'source.gfm'
-    'text.git-commit'
-    'text.plain'
-    'text.plain.null-grammar'
-  ]
+'spell-check': {}
+'grammar-selector': {}
+'tabs': {}

@@ -1,40 +1,35 @@
-@darkest-color: #222222;
+@background-light-color: #2b303b;
+@background-dark-color: #1c1f26;
 @highlight-color: #000000;
 
 .item-views {
-  border-top: 8px solid @darkest-color;
-}
-
-.tree-view {
-  border-left: 8px solid @darkest-color;
-  background-color: @darkest-color;
+  border-top: 8px solid @background-light-color;
 }
 
 .list-tree .selected:before {
-  background-color: @darkest-color;
+  background-color: @background-dark-color;
+}
+
+.tree-view {
+  border-left: 1px solid white;
+  background-color: @background-dark-color;
+}
+
+.meta.embedded.line {
+  color: white;
+}
+
+.panes .pane {
+  background-color: @background-light-color;
 }
 
 .workspace, .tool-panel {
-  background-color: @darkest-color;
-}
-
-.tab-bar .tab.active {
-  background-color: @darkest-color;
-
-  &:before {
-    background-color: @darkest-color;
-  }
+  background-color: @background-light-color;
 }
 
 .editor {
-  background-color: @darkest-color;
-
   &.is-focused .selection .region {
     background-color: @highlight-color;
-  }
-
-  .gutter {
-    background-color: @darkest-color;
   }
 
   .punctuation.separator.other {
