@@ -1,6 +1,4 @@
-# My Dotfiles
-
-To install:
+## Installation
 
 ```bash
 $ rake
@@ -12,8 +10,8 @@ This will symlink all files and directories in `./source/*` to `~/.FILENAME`
 
 * Xcode.app + Command Line Tools
 * Posgres.app
-* [homebrew](http://mxcl.github.io/homebrew/)
+* [homebrew][1]
 * `rbenv` + `ruby-build` + `bundler`
-* `vcprompt`
 * Heroku Toolbelt
-* TextMate 2
+
+[1]: http://mxcl.github.io/homebrew/
