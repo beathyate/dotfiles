@@ -1,10 +1,8 @@
-require 'fileutils'
+require "fileutils"
 
 task :default do
-  Dir['source/*'].each do |dotfile|
-    dotfile_name = dotfile.split('/').last
-    dotfile_path = File.expand_path "#{ENV['HOME']}/.#{dotfile_name}"
-
-    ln_s File.expand_path(dotfile), dotfile_path unless File.exists? dotfile_path
+  Dir["source/*"].each do |dotfile|
+    destination = "#{ ENV["HOME"] }/.#{ File.basename dotfile }"
+    ln_s dotfile, destination unless File.exists? destination
   end
 end
