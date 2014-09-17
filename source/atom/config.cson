@@ -1,7 +1,7 @@
 'exception-reporting':
   'userId': '0414353d-9b58-5649-d050-8e64db395f53'
 'release-notes':
-  'viewedVersion': '0.95.0'
+  'viewedVersion': '0.129.0'
 'welcome':
   'showOnStartup': false
 'metrics':
@@ -12,6 +12,7 @@
   'fontSize': 13
   'showIndentGuide': true
   'softWrapAtPreferredLineLength': true
+  'invisibles': {}
 'core':
   'themes': [
     'spacegray-dark-ui'
@@ -36,6 +37,7 @@
 'tree-view':
   'hideIgnoredNames': true
   'showOnRightSide': true
+  'hideVcsIgnoredFiles': true
 'whitespace':
   'ignoreWhitespaceOnCurrentLine': false
 'find-and-replace': {}
