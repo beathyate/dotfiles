@@ -32,6 +32,7 @@
     'feedback'
     'welcome'
     'background-tips'
+    'atom-erb'
   ]
   'useReactEditor': true
 'tree-view':
@@ -52,3 +53,6 @@
 'spell-check': {}
 'grammar-selector': {}
 'tabs': {}
+'autocomplete':
+  'includeCompletionsFromAllBuffers': true
+'git-log': {}
