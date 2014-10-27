@@ -1,58 +1,66 @@
-'exception-reporting':
-  'userId': '0414353d-9b58-5649-d050-8e64db395f53'
-'release-notes':
-  'viewedVersion': '0.129.0'
-'welcome':
-  'showOnStartup': false
-'metrics':
-  'userId': 'f59cf66844f3900a7090147c78d587321b9ae40d'
-'editor':
-  'preferredLineLength': 120
-  'fontFamily': 'Menlo'
-  'fontSize': 13
-  'showIndentGuide': true
-  'softWrapAtPreferredLineLength': true
-  'invisibles': {}
-'core':
-  'themes': [
-    'spacegray-dark-ui'
-    'twilight-syntax-spacegray-ui'
-  ]
-  'ignoredNames': [
-    '.git'
-    '.svn'
-    '.DS_Store'
-    '.bundle'
-  ]
-  'hideIgnoredNames': true
-  'projectHome': '/Users/goddamnhippie/Code'
-  'disabledPackages': [
-    'travis-ci-status'
-    'language-java'
-    'feedback'
-    'welcome'
-    'background-tips'
-    'atom-erb'
-  ]
-  'useReactEditor': true
-'tree-view':
-  'hideIgnoredNames': true
-  'showOnRightSide': true
-  'hideVcsIgnoredFiles': true
-'whitespace':
-  'ignoreWhitespaceOnCurrentLine': false
-'find-and-replace': {}
-'git-diff': {}
-'markdown-preview':
-  'grammars': [
-    'source.gfm'
-    'source.litcoffee'
-    'text.plain'
-    'text.plain.null-grammar'
-  ]
-'spell-check': {}
-'grammar-selector': {}
-'tabs': {}
-'autocomplete':
-  'includeCompletionsFromAllBuffers': true
-'git-log': {}
+'global':
+  'exception-reporting':
+    'userId': '0414353d-9b58-5649-d050-8e64db395f53'
+  'release-notes':
+    'viewedVersion': '0.129.0'
+  'welcome':
+    'showOnStartup': false
+  'metrics':
+    'userId': 'f59cf66844f3900a7090147c78d587321b9ae40d'
+  'editor':
+    'preferredLineLength': 120
+    'fontFamily': 'Menlo'
+    'fontSize': 13
+    'showIndentGuide': true
+    'softWrapAtPreferredLineLength': true
+    'invisibles': {}
+  'core':
+    'themes': [
+      'spacegray-dark-ui'
+      'twilight-syntax-spacegray-ui'
+    ]
+    'ignoredNames': [
+      '.git'
+      '.svn'
+      '.DS_Store'
+      '.bundle'
+    ]
+    'hideIgnoredNames': true
+    'projectHome': '/Users/goddamnhippie/Code'
+    'disabledPackages': [
+      'travis-ci-status'
+      'language-java'
+      'feedback'
+      'welcome'
+      'background-tips'
+      'atom-erb'
+    ]
+    'useReactEditor': true
+  'tree-view':
+    'hideIgnoredNames': true
+    'showOnRightSide': true
+  'whitespace':
+    'ignoreWhitespaceOnCurrentLine': false
+  'markdown-preview':
+    'grammars': [
+      'source.gfm'
+      'source.litcoffee'
+      'text.plain'
+      'text.plain.null-grammar'
+    ]
+  'autocomplete':
+    'includeCompletionsFromAllBuffers': true
+'.js.rails.source source.jquery.js':
+  'editor': {}
+'.rails.rjs.ruby.source':
+  'editor': {}
+'.ruby.source.sql':
+  'editor': {}
+'.erb.html.text':
+  'editor': {}
+'.html.ruby.text':
+  'editor': {}
+'.rails.ruby.source':
+  'editor': {}
+'.ruby.source':
+  'editor': {}
