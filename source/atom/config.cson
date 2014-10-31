@@ -50,17 +50,23 @@
     ]
   'autocomplete':
     'includeCompletionsFromAllBuffers': true
+  'atom-beautify':
+    '_analyticsUserId': 'ff2f3bf1-72d3-48d0-aea4-1bcdc620432f'
+  'autocomplete-plus':
+    'autoActivationDelay': 200
+  'minimap':
+    'displayMinimapOnLeft': true
 '.js.rails.source source.jquery.js':
   'editor': {}
 '.rails.rjs.ruby.source':
   'editor': {}
-'.ruby.source.sql':
-  'editor': {}
-'.erb.html.text':
+'.rails.ruby.source':
   'editor': {}
 '.html.ruby.text':
   'editor': {}
-'.rails.ruby.source':
+'.erb.html.text':
+  'editor': {}
+'.ruby.source.sql':
   'editor': {}
 '.ruby.source':
   'editor': {}
