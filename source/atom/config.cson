@@ -1,4 +1,6 @@
 'global':
+  'linter-rubocop':
+    'rubocopExecutablePath': '/usr/local/var/rbenv/shims/rubocop'
   'exception-reporting':
     'userId': '0414353d-9b58-5649-d050-8e64db395f53'
   'release-notes':
@@ -34,6 +36,7 @@
       'welcome'
       'background-tips'
       'atom-erb'
+      'autocomplete-snippets'
     ]
     'useReactEditor': true
   'tree-view':
@@ -56,6 +59,9 @@
     'autoActivationDelay': 200
   'minimap':
     'displayMinimapOnLeft': true
+  'linter':
+    'lintOnChange': false
+    'showHighlighting': false
 '.js.rails.source source.jquery.js':
   'editor': {}
 '.rails.rjs.ruby.source':
