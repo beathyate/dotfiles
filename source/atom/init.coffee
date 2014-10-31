@@ -12,4 +12,11 @@
 #   editor = editorView.getEditor()
 #   if path.extname(editor.getPath()) is '.md'
 #     editor.setSoftWrap(true)
-process.env.PATH = ["tmp/bin", process.env.PATH].join(":")
+process.env.PATH = [
+  "/usr/local/bin",
+  "/usr/local/sbin",
+  process.env.HEROKU_BIN,
+  process.env.POSTGRES_BIN,
+  process.env.XCODE_BIN,
+  process.env.PATH
+].join(":")
