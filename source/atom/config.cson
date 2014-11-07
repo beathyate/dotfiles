@@ -37,6 +37,7 @@
       'background-tips'
       'atom-erb'
       'autocomplete-snippets'
+      'autocomplete'
     ]
     'useReactEditor': true
   'tree-view':
@@ -55,8 +56,6 @@
     'includeCompletionsFromAllBuffers': true
   'atom-beautify':
     '_analyticsUserId': 'ff2f3bf1-72d3-48d0-aea4-1bcdc620432f'
-  'autocomplete-plus':
-    'autoActivationDelay': 200
   'minimap':
     'displayMinimapOnLeft': true
   'linter':
@@ -66,13 +65,13 @@
   'editor': {}
 '.rails.rjs.ruby.source':
   'editor': {}
-'.rails.ruby.source':
-  'editor': {}
-'.html.ruby.text':
+'.ruby.source.sql':
   'editor': {}
 '.erb.html.text':
   'editor': {}
-'.ruby.source.sql':
+'.html.ruby.text':
+  'editor': {}
+'.rails.ruby.source':
   'editor': {}
 '.ruby.source':
   'editor': {}
