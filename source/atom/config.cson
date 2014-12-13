@@ -15,6 +15,8 @@
     'fontSize': 13
     'showIndentGuide': true
     'softWrapAtPreferredLineLength': true
+    'autoIndentOnPaste': false
+    'useShadowDOM': true
     'invisibles': {}
   'core':
     'themes': [
@@ -56,11 +58,14 @@
     'includeCompletionsFromAllBuffers': true
   'atom-beautify':
     '_analyticsUserId': 'ff2f3bf1-72d3-48d0-aea4-1bcdc620432f'
+    'beautifyEntireFileOnSave': false
+    'ruby_rbeautify_path': '/usr/local/var/rbenv/shims/rbeautify'
   'minimap':
     'displayMinimapOnLeft': true
   'linter':
     'lintOnChange': false
     'showHighlighting': false
+    'lintOnEditorFocus': false
 '.js.rails.source source.jquery.js':
   'editor': {}
 '.rails.rjs.ruby.source':
