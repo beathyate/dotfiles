@@ -70,13 +70,13 @@
   'editor': {}
 '.rails.rjs.ruby.source':
   'editor': {}
-'.ruby.source.sql':
-  'editor': {}
-'.erb.html.text':
+'.rails.ruby.source':
   'editor': {}
 '.html.ruby.text':
   'editor': {}
-'.rails.ruby.source':
+'.erb.html.text':
+  'editor': {}
+'.ruby.source.sql':
   'editor': {}
 '.ruby.source':
   'editor': {}
