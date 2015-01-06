@@ -1,4 +1,4 @@
-'global':
+'*':
   'linter-rubocop':
     'rubocopExecutablePath': '/usr/local/var/rbenv/shims/rubocop'
   'exception-reporting':
@@ -10,27 +10,20 @@
   'metrics':
     'userId': 'f59cf66844f3900a7090147c78d587321b9ae40d'
   'editor':
-    'preferredLineLength': 120
     'fontFamily': 'Menlo'
     'fontSize': 13
     'showIndentGuide': true
-    'softWrapAtPreferredLineLength': true
     'autoIndentOnPaste': false
+    'preferredLineLength': 120
+    'softWrapAtPreferredLineLength': true
     'useShadowDOM': true
-    'invisibles': {}
   'core':
-    'themes': [
-      'spacegray-dark-ui'
-      'twilight-syntax-spacegray-ui'
-    ]
     'ignoredNames': [
       '.git'
       '.svn'
       '.DS_Store'
       '.bundle'
     ]
-    'hideIgnoredNames': true
-    'projectHome': '/Users/goddamnhippie/Code'
     'disabledPackages': [
       'travis-ci-status'
       'language-java'
@@ -40,8 +33,13 @@
       'atom-erb'
       'autocomplete-snippets'
       'autocomplete'
+      'linter-rubocop'
     ]
-    'useReactEditor': true
+    'themes': [
+      'spacegray-dark-ui'
+      'twilight-syntax-spacegray-ui'
+    ]
+    'projectHome': '/Users/goddamnhippie/Code'
   'tree-view':
     'hideIgnoredNames': true
     'showOnRightSide': true
@@ -64,19 +62,5 @@
     'displayMinimapOnLeft': true
   'linter':
     'lintOnChange': false
-    'showHighlighting': false
     'lintOnEditorFocus': false
-'.js.rails.source source.jquery.js':
-  'editor': {}
-'.rails.rjs.ruby.source':
-  'editor': {}
-'.rails.ruby.source':
-  'editor': {}
-'.html.ruby.text':
-  'editor': {}
-'.erb.html.text':
-  'editor': {}
-'.ruby.source.sql':
-  'editor': {}
-'.ruby.source':
-  'editor': {}
+    'showHighlighting': false
