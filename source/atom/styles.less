@@ -15,10 +15,6 @@
   background-color: @background-light-color;
 }
 
-.meta.embedded.line {
-  color: white;
-}
-
 .panes .pane {
   background-color: @background-light-color;
 }
@@ -27,12 +23,16 @@
   background-color: @background-light-color;
 }
 
-.editor {
+atom-text-editor::shadow {
   &.is-focused .selection .region {
     background-color: @highlight-color;
   }
 
   .punctuation.separator.other {
     color: #7587A6;
+  }
+
+  .meta.embedded.line {
+    color: white;
   }
 }
