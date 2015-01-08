@@ -17,6 +17,7 @@
     'preferredLineLength': 120
     'softWrapAtPreferredLineLength': true
     'useShadowDOM': true
+    'invisibles': {}
   'core':
     'ignoredNames': [
       '.git'
@@ -64,3 +65,6 @@
     'lintOnChange': false
     'lintOnEditorFocus': false
     'showHighlighting': false
+  'view-tail-large-files':
+    'fontFamily': 'Menlo'
+    'fontSize': 13
