@@ -1,70 +1,70 @@
-'*':
-  'linter-rubocop':
-    'rubocopExecutablePath': '/usr/local/var/rbenv/shims/rubocop'
-  'exception-reporting':
-    'userId': '0414353d-9b58-5649-d050-8e64db395f53'
-  'release-notes':
-    'viewedVersion': '0.129.0'
-  'welcome':
-    'showOnStartup': false
-  'metrics':
-    'userId': 'f59cf66844f3900a7090147c78d587321b9ae40d'
-  'editor':
-    'fontFamily': 'Menlo'
-    'fontSize': 13
-    'showIndentGuide': true
-    'autoIndentOnPaste': false
-    'preferredLineLength': 120
-    'softWrapAtPreferredLineLength': true
-    'useShadowDOM': true
-    'invisibles': {}
-  'core':
-    'ignoredNames': [
-      '.git'
-      '.svn'
-      '.DS_Store'
-      '.bundle'
+"*":
+  "exception-reporting":
+    userId: "0414353d-9b58-5649-d050-8e64db395f53"
+  "release-notes":
+    viewedVersion: "0.129.0"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "f59cf66844f3900a7090147c78d587321b9ae40d"
+  editor:
+    fontFamily: "Menlo"
+    fontSize: 13
+    showIndentGuide: true
+    autoIndentOnPaste: false
+    preferredLineLength: 120
+    softWrapAtPreferredLineLength: true
+    useShadowDOM: true
+    invisibles: {}
+  core:
+    ignoredNames: [
+      ".git"
+      ".svn"
+      ".DS_Store"
+      ".bundle"
     ]
-    'disabledPackages': [
-      'travis-ci-status'
-      'language-java'
-      'feedback'
-      'welcome'
-      'background-tips'
-      'atom-erb'
-      'autocomplete-snippets'
-      'autocomplete'
-      'linter-rubocop'
+    disabledPackages: [
+      "travis-ci-status"
+      "language-java"
+      "feedback"
+      "welcome"
+      "background-tips"
+      "atom-erb"
+      "autocomplete-snippets"
+      "autocomplete"
+      "linter-rubocop"
     ]
-    'themes': [
-      'spacegray-dark-ui'
-      'twilight-syntax-spacegray-ui'
+    themes: [
+      "one-dark-ui"
+      "one-dark-syntax"
     ]
-    'projectHome': '/Users/goddamnhippie/Code'
-  'tree-view':
-    'hideIgnoredNames': true
-    'showOnRightSide': true
-  'whitespace':
-    'ignoreWhitespaceOnCurrentLine': false
-  'markdown-preview':
-    'grammars': [
-      'source.gfm'
-      'source.litcoffee'
-      'text.plain'
-      'text.plain.null-grammar'
+    projectHome: "/Users/goddamnhippie/Code"
+  "tree-view":
+    hideIgnoredNames: true
+    showOnRightSide: true
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+  "markdown-preview":
+    grammars: [
+      "source.gfm"
+      "source.litcoffee"
+      "text.plain"
+      "text.plain.null-grammar"
     ]
-  'autocomplete':
-    'includeCompletionsFromAllBuffers': true
-  'atom-beautify':
-    '_analyticsUserId': 'ff2f3bf1-72d3-48d0-aea4-1bcdc620432f'
-    'beautifyEntireFileOnSave': false
-    'ruby_rbeautify_path': '/usr/local/var/rbenv/shims/rbeautify'
-  'minimap':
-    'displayMinimapOnLeft': true
-  'linter':
-    'lintOnChange': false
-    'lintOnEditorFocus': false
-    'showHighlighting': false
-  'view-tail-large-files':
-    'fontFamily': 'Menlo'
-    'fontSize': 13
+  autocomplete:
+    includeCompletionsFromAllBuffers: true
+  "atom-beautify":
+    _analyticsUserId: "ff2f3bf1-72d3-48d0-aea4-1bcdc620432f"
+    beautifyEntireFileOnSave: false
+    ruby_rbeautify_path: "/usr/local/var/rbenv/shims/rbeautify"
+  minimap:
+    displayMinimapOnLeft: true
+  linter:
+    lintOnChange: false
+    lintOnEditorFocus: false
+    showHighlighting: false
+  "view-tail-large-files":
+    fontFamily: "Menlo"
+    fontSize: 13
+  "ruby-test":
+    testAllCommand: "bin/rake"
