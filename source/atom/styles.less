@@ -1,37 +1,21 @@
-@background-light-color: #2b303b;
-@highlight-color: #000000;
-
-.item-views {
-  border-top: 8px solid @background-light-color;
+// Make command output look like terminal output
+.panel-body pre {
+  color: green;
 }
 
-.list-tree .selected:before {
-  background-color: @background-light-color;
+// Less intrusive current file mark
+.focusable-panel:focus .selected:before, .tree-view .selected:before {
+  background-color: transparent;
   border-right: 5px solid white;
 }
 
-.tree-view {
-  padding-top: 5px;
-  background-color: @background-light-color;
-}
-
-.panes .pane {
-  background-color: @background-light-color;
-}
-
-.workspace, .tool-panel {
-  background-color: @background-light-color;
-}
-
 atom-text-editor::shadow {
+  // Black background on selected text to make it stand out
   .selection .region {
-    background-color: @highlight-color;
+    background-color: black;
   }
 
-  .punctuation.separator.other {
-    color: #7587A6;
-  }
-
+  // Use white text on ERB blocks
   .meta.embedded.line {
     color: white;
   }
