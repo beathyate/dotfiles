@@ -1,22 +1,4 @@
-// Make command output look like terminal output
-.panel-body pre {
-  color: green;
-}
-
-// Less intrusive current file mark
-.focusable-panel:focus .selected:before, .tree-view .selected:before {
-  background-color: transparent;
-  border-right: 5px solid white;
-}
-
-atom-text-editor::shadow {
-  // Black background on selected text to make it stand out
-  .selection .region {
-    background-color: black;
-  }
-
-  // Use white text on ERB blocks
-  .meta.embedded.line {
-    color: white;
-  }
+// Black background on selected text to make it stand out
+.focusable-panel:focus .selected:before, .tree-view .selected:before, atom-text-editor::shadow .selection .region {
+  background-color: black;
 }
