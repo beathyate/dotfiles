@@ -1,8 +1,6 @@
 "*":
   "exception-reporting":
     userId: "0414353d-9b58-5649-d050-8e64db395f53"
-  "release-notes":
-    viewedVersion: "0.129.0"
   welcome:
     showOnStartup: false
   metrics:
@@ -22,6 +20,7 @@
       ".svn"
       ".DS_Store"
       ".bundle"
+      "log"
     ]
     disabledPackages: [
       "travis-ci-status"
@@ -40,6 +39,7 @@
     ]
     projectHome: "/Users/goddamnhippie/Code"
   "tree-view":
+    hideVcsIgnoredFiles: true
     hideIgnoredNames: true
     showOnRightSide: true
   whitespace:
@@ -58,7 +58,9 @@
     beautifyEntireFileOnSave: false
     ruby_rbeautify_path: "/usr/local/var/rbenv/shims/rbeautify"
   minimap:
+    autoToggle: false
     displayMinimapOnLeft: true
+    adjustMinimapWidthToSoftWrap: false
   linter:
     lintOnChange: false
     lintOnEditorFocus: false
