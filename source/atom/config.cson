@@ -7,13 +7,13 @@
     userId: "f59cf66844f3900a7090147c78d587321b9ae40d"
   editor:
     fontFamily: "Menlo"
-    fontSize: 13
     showIndentGuide: true
     autoIndentOnPaste: false
     preferredLineLength: 120
     softWrapAtPreferredLineLength: true
     useShadowDOM: true
     invisibles: {}
+    fontSize: 13
   core:
     ignoredNames: [
       ".git"
@@ -21,6 +21,8 @@
       ".DS_Store"
       ".bundle"
       "log"
+      "tmp"
+      ".repl_history"
     ]
     disabledPackages: [
       "travis-ci-status"
@@ -33,15 +35,11 @@
       "autocomplete"
       "linter-rubocop"
     ]
-    themes: [
-      "one-dark-ui"
-      "one-dark-syntax"
-    ]
     projectHome: "/Users/goddamnhippie/Code"
+    excludeVcsIgnoredPaths: false
   "tree-view":
-    hideVcsIgnoredFiles: true
-    hideIgnoredNames: true
     showOnRightSide: true
+    hideIgnoredNames: true
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
   "markdown-preview":
@@ -70,3 +68,9 @@
     fontSize: 13
   "ruby-test":
     testAllCommand: "bin/rake"
+  "atom-pair":
+    pusher_app_key: "dd477c218a6d9c56b107"
+    pusher_app_secret: "83ca3dddc6e5821fb360"
+".nginx.source":
+  editor:
+    preferredLineLength: 120
