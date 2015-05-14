@@ -1,5 +1,5 @@
 # environment variables
-export POSTGRES_BIN="/Applications/Postgres.app/Contents/Versions/9.3/bin"
+export POSTGRES_BIN="/Applications/Postgres.app/Contents/Versions/9.4/bin"
 export XCODE_BIN="/Applications/Xcode.app/Contents/Developer/usr/bin"
 export HEROKU_BIN="/usr/local/heroku/bin"
 
