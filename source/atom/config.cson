@@ -71,6 +71,10 @@
   "atom-pair":
     pusher_app_key: "dd477c218a6d9c56b107"
     pusher_app_secret: "83ca3dddc6e5821fb360"
+  "fuzzy-finder":
+    preserveLastSearch: true
+  "one-dark-ui":
+    layoutMode: "Compact"
 ".nginx.source":
   editor:
     preferredLineLength: 120
