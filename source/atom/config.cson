@@ -12,7 +12,8 @@
     preferredLineLength: 120
     softWrapAtPreferredLineLength: true
     useShadowDOM: true
-    invisibles: {}
+    invisibles:
+      {}
     fontSize: 13
   core:
     ignoredNames: [
@@ -75,6 +76,13 @@
     preserveLastSearch: true
   "one-dark-ui":
     layoutMode: "Compact"
+  "autocomplete-plus":
+    {}
+  "atom-fuzzy-grep":
+    {}
+  "git-projects":
+    rootPath: "/Users/goddamnhippie/Code"
+    sortBy: "Latest modification date"
 ".nginx.source":
   editor:
     preferredLineLength: 120
