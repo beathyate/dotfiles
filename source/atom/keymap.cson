@@ -1,2 +1,2 @@
-'.editor':
+'.atom-text-editor':
   'ctrl->': 'erb-snippets:erb_tags'
