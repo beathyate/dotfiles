@@ -5,9 +5,10 @@ export PATH="/usr/local/bin:/usr/local/sbin:$POSTGRES_BIN:$XCODE_BIN:$PATH"
 export RBENV_ROOT="/usr/local/var/rbenv"
 export EDITOR="/usr/local/bin/atom -w"
 export CODE_DIR="$HOME/Code"
-export SSL_CERT_FILE="/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt"
+export GOPATH="$HOME/Code/go"
+export HOMEBREW_GITHUB_API_TOKEN="$(cat $HOME/.github_token)"
 
-# Simplify prompt
+# simplify prompt
 PS1="\n$ "
 
 # bash_completion initializer
@@ -17,13 +18,8 @@ fi
 
 # code dir function and autocompletion
 function cdc {
-  if [ "$1" != "" ]; then
-    cd $CODE_DIR && cd $1
-  else
-    cd $CODE_DIR
-  fi
+  cd $CODE_DIR/$1;
 }
-
 _cdc()
 {
   local cur=${COMP_WORDS[COMP_CWORD]}
@@ -31,15 +27,8 @@ _cdc()
 }
 complete -F _cdc cdc
 
-# copy highlighted code
-function light() {
-  if [ -z "$2" ]
-    then src="pbpaste"
-  else
-    src="cat $2"
-  fi
-  $src | highlight -O rtf --syntax $1 --font Menlo --style molokai --font-size 18 | pbcopy
-}
+# AWS autocompletion
+complete -C aws_completer aws
 
 # rbenv initialization
 eval "$(rbenv init -)"
@@ -47,3 +36,10 @@ eval "$(rbenv init -)"
 # aliases
 alias lsl='pwd && ls -laGh'
 alias bx="bundle exec"
+alias console="heroku local:run bin/rails console"
+alias generate="heroku local:run bin/rails generate"
+alias brake="heroku local:run bin/rake"
+alias start="heroku local"
+alias run="heroku local:run"
+alias migrate="heroku local:run bin/rake db:migrate"
+alias rollback="heroku local:run bin/rake db:rollback"

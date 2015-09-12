@@ -6,15 +6,14 @@
   metrics:
     userId: "f59cf66844f3900a7090147c78d587321b9ae40d"
   editor:
-    fontFamily: "Menlo"
     showIndentGuide: true
     autoIndentOnPaste: false
     preferredLineLength: 120
     softWrapAtPreferredLineLength: true
     useShadowDOM: true
-    invisibles:
-      {}
-    fontSize: 13
+    invisibles: {}
+    showInvisibles: true
+    fontFamily: "Menlo"
   core:
     ignoredNames: [
       ".git"
@@ -35,12 +34,18 @@
       "autocomplete-snippets"
       "autocomplete"
       "linter-rubocop"
+      "linter-erb"
     ]
     projectHome: "/Users/goddamnhippie/Code"
     excludeVcsIgnoredPaths: false
+    themes: [
+      "one-dark-ui"
+      "solarized-dark-syntax"
+    ]
   "tree-view":
     showOnRightSide: true
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
   "markdown-preview":
@@ -61,14 +66,19 @@
     displayMinimapOnLeft: true
     adjustMinimapWidthToSoftWrap: false
   linter:
-    lintOnChange: false
-    lintOnEditorFocus: false
-    showHighlighting: false
+    lintOnEditorFocus: true
+    showHighlighting: true
+    lintOnFly: false
+    showErrorTabProject: false
+    showErrorTabFile: false
+    statusIconScope: "File"
+    statusIconPosition: "Right"
   "view-tail-large-files":
     fontFamily: "Menlo"
     fontSize: 13
   "ruby-test":
-    testAllCommand: "bin/rake"
+    testAllCommand: "/usr/local/var/rbenv/shims/bundle exec bin/rake"
+    rspecAllCommand: "/usr/local/var/rbenv/shims/bundle exec bin/rspec --tty spec"
   "atom-pair":
     pusher_app_key: "dd477c218a6d9c56b107"
     pusher_app_secret: "83ca3dddc6e5821fb360"
@@ -77,12 +87,27 @@
   "one-dark-ui":
     layoutMode: "Compact"
   "autocomplete-plus":
-    {}
-  "atom-fuzzy-grep":
-    {}
+    confirmCompletion: "enter"
+  "atom-fuzzy-grep": {}
   "git-projects":
     rootPath: "/Users/goddamnhippie/Code"
     sortBy: "Latest modification date"
+  "file-icons":
+    coloured: false
+  "linter-erb":
+    erbExecutablePath: "/usr/local/var/rbenv/shims/erb"
+  "linter-ruby":
+    rubyExecutablePath: "/usr/local/var/rbenv/shims/ruby"
+  "one-light-ui": {}
+  pigments:
+    extendAutocompleteToVariables: true
+    markerType: "dot"
+  "color-picker": {}
+  "theme-toggler":
+    darkUiTheme: "one-dark-ui"
+    darkSyntaxTheme: "one-dark-syntax"
+    lightSyntaxTheme: "one-light-syntax"
+    lightUiTheme: "one-light-ui"
 ".nginx.source":
   editor:
     preferredLineLength: 120
