@@ -34,7 +34,7 @@ complete -C aws_completer aws
 eval "$(rbenv init -)"
 
 # aliases
-alias lsl='pwd && ls -laGh'
+alias lsl="pwd && ls -laGh"
 alias bx="bundle exec"
 alias console="heroku local:run bin/rails console"
 alias generate="heroku local:run bin/rails generate"
