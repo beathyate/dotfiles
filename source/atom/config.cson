@@ -14,7 +14,6 @@
     invisibles: {}
     showInvisibles: true
     fontFamily: "Menlo"
-    fontSize: 16
   core:
     ignoredNames: [
       ".git"

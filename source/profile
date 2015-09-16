@@ -27,6 +27,14 @@ _cdc()
 }
 complete -F _cdc cdc
 
+# heroku functions
+function production {
+  heroku "$@" -a "${PWD##*/}-production";
+}
+function staging {
+  heroku "$@" -a "${PWD##*/}-staging";
+}
+
 # AWS autocompletion
 complete -C aws_completer aws
 
