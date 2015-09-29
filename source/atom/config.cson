@@ -34,7 +34,6 @@
       "autocomplete-snippets"
       "autocomplete"
       "linter-rubocop"
-      "linter-erb"
     ]
     projectHome: "/Users/goddamnhippie/Code"
     excludeVcsIgnoredPaths: false
@@ -78,7 +77,8 @@
     fontSize: 13
   "ruby-test":
     testAllCommand: "/usr/local/var/rbenv/shims/bundle exec bin/rake"
-    rspecAllCommand: "/usr/local/var/rbenv/shims/bundle exec bin/rspec --tty spec"
+    rspecAllCommand: "/usr/local/var/rbenv/shims/bundle exec bin/rake"
+    testFramework: "minitest"
   "atom-pair":
     pusher_app_key: "dd477c218a6d9c56b107"
     pusher_app_secret: "83ca3dddc6e5821fb360"

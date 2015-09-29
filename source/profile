@@ -18,7 +18,7 @@ fi
 
 # code dir function and autocompletion
 function cdc {
-  cd $CODE_DIR/$1;
+  cd "$CODE_DIR/$1";
 }
 _cdc()
 {
@@ -29,10 +29,13 @@ complete -F _cdc cdc
 
 # heroku functions
 function production {
-  heroku "$@" -a "${PWD##*/}-production";
+  heroku "$@" -r production;
 }
 function staging {
-  heroku "$@" -a "${PWD##*/}-staging";
+  heroku "$@" -r staging;
+}
+function legacy {
+  heroku "$@" -r legacy;
 }
 
 # AWS autocompletion
