@@ -2,4 +2,5 @@ source/atom/.node-gyp
 source/atom/compile-cache
 source/atom/packages
 source/atom/storage
+source/atom/blob-store
 source/atom/.apm
