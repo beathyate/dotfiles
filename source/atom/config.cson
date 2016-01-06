@@ -44,7 +44,6 @@
   "tree-view":
     showOnRightSide: true
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
   "markdown-preview":
@@ -59,7 +58,6 @@
   "atom-beautify":
     _analyticsUserId: "ff2f3bf1-72d3-48d0-aea4-1bcdc620432f"
     beautifyEntireFileOnSave: false
-    ruby_rbeautify_path: "/usr/local/var/rbenv/shims/rbeautify"
   minimap:
     autoToggle: false
     displayMinimapOnLeft: true
@@ -72,18 +70,18 @@
     showErrorTabFile: false
     statusIconScope: "File"
     statusIconPosition: "Right"
+    errorPanelHeight: 148
   "view-tail-large-files":
     fontFamily: "Menlo"
     fontSize: 13
   "ruby-test":
-    testAllCommand: "/usr/local/var/rbenv/shims/bundle exec bin/rake"
-    rspecAllCommand: "/usr/local/var/rbenv/shims/bundle exec bin/rake"
     testFramework: "minitest"
   "atom-pair":
     pusher_app_key: "dd477c218a6d9c56b107"
     pusher_app_secret: "83ca3dddc6e5821fb360"
   "fuzzy-finder":
     preserveLastSearch: true
+    useAlternateScoring: true
   "one-dark-ui":
     layoutMode: "Compact"
   "autocomplete-plus":
@@ -96,8 +94,7 @@
     coloured: false
   "linter-erb":
     erbExecutablePath: "/usr/local/var/rbenv/shims/erb"
-  "linter-ruby":
-    rubyExecutablePath: "/usr/local/var/rbenv/shims/ruby"
+  "linter-ruby": {}
   "one-light-ui": {}
   pigments:
     extendAutocompleteToVariables: true

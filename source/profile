@@ -2,7 +2,6 @@
 export POSTGRES_BIN="/Applications/Postgres.app/Contents/Versions/9.4/bin"
 export XCODE_BIN="/Applications/Xcode.app/Contents/Developer/usr/bin"
 export PATH="/usr/local/bin:/usr/local/sbin:$POSTGRES_BIN:$XCODE_BIN:$PATH"
-export RBENV_ROOT="/usr/local/var/rbenv"
 export EDITOR="/usr/local/bin/atom -w"
 export CODE_DIR="$HOME/Code"
 export GOPATH="$HOME/.go"
@@ -34,15 +33,14 @@ function production {
 function staging {
   heroku "$@" -r staging;
 }
-function legacy {
-  heroku "$@" -r legacy;
-}
 
 # AWS autocompletion
 complete -C aws_completer aws
 
-# rbenv initialization
-eval "$(rbenv init -)"
+# chruby initializer
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+chruby $(cat ~/.ruby-version)
 
 # aliases
 alias lsl="pwd && ls -laGh"
@@ -50,7 +48,7 @@ alias bx="bundle exec"
 alias console="heroku local:run bin/rails console"
 alias generate="heroku local:run bin/rails generate"
 alias binrake="heroku local:run bin/rake"
-alias start="heroku local"
+alias start="heroku local:start"
 alias run="heroku local:run"
 alias migrate="heroku local:run bin/rake db:migrate"
 alias rollback="heroku local:run bin/rake db:rollback"
