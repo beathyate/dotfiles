@@ -1,29 +1,17 @@
 "*":
-  "exception-reporting":
-    userId: "0414353d-9b58-5649-d050-8e64db395f53"
-  welcome:
-    showOnStartup: false
-  metrics:
-    userId: "f59cf66844f3900a7090147c78d587321b9ae40d"
-  editor:
-    showIndentGuide: true
-    autoIndentOnPaste: false
-    preferredLineLength: 120
-    softWrapAtPreferredLineLength: true
-    useShadowDOM: true
-    invisibles: {}
-    showInvisibles: true
-    fontFamily: "Menlo"
+  "atom-beautify":
+    _analyticsUserId: "ff2f3bf1-72d3-48d0-aea4-1bcdc620432f"
+    beautifyEntireFileOnSave: false
+  "atom-fuzzy-grep": {}
+  "atom-pair":
+    pusher_app_key: "dd477c218a6d9c56b107"
+    pusher_app_secret: "83ca3dddc6e5821fb360"
+  autocomplete:
+    includeCompletionsFromAllBuffers: true
+  "autocomplete-plus":
+    confirmCompletion: "enter"
+  "color-picker": {}
   core:
-    ignoredNames: [
-      ".git"
-      ".svn"
-      ".DS_Store"
-      ".bundle"
-      "log"
-      "tmp"
-      ".repl_history"
-    ]
     disabledPackages: [
       "travis-ci-status"
       "language-java"
@@ -35,17 +23,53 @@
       "autocomplete"
       "linter-rubocop"
     ]
-    projectHome: "/Users/goddamnhippie/Code"
     excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      ".git"
+      ".svn"
+      ".DS_Store"
+      ".bundle"
+      "log"
+      "tmp"
+      ".repl_history"
+    ]
+    projectHome: "/Users/goddamnhippie/Code"
     themes: [
       "one-dark-ui"
       "solarized-dark-syntax"
     ]
-  "tree-view":
-    showOnRightSide: true
-    hideIgnoredNames: true
-  whitespace:
-    ignoreWhitespaceOnCurrentLine: false
+  editor:
+    autoIndentOnPaste: false
+    fontFamily: "Menlo"
+    invisibles: {}
+    preferredLineLength: 120
+    showIndentGuide: true
+    showInvisibles: true
+    softWrapAtPreferredLineLength: true
+    useShadowDOM: true
+  "exception-reporting":
+    userId: "0414353d-9b58-5649-d050-8e64db395f53"
+  "file-icons":
+    coloured: false
+  "fuzzy-finder":
+    preserveLastSearch: true
+    useAlternateScoring: true
+  "git-projects":
+    rootPath: "/Users/goddamnhippie/Code"
+    sortBy: "Latest modification date"
+  linter:
+    errorPanelHeight: 148
+    lintOnEditorFocus: true
+    lintOnFly: false
+    showErrorTabFile: false
+    showErrorTabProject: false
+    showHighlighting: true
+    statusIconPosition: "Right"
+    statusIconScope: "File"
+  "linter-erb":
+    erbExecutablePath: "/usr/local/var/rbenv/shims/erb"
+  "linter-ruby":
+    rubyExecutablePath: "/Users/goddamnhippie/.rubies/ruby-2.3.0/bin/ruby"
   "markdown-preview":
     grammars: [
       "source.gfm"
@@ -53,58 +77,35 @@
       "text.plain"
       "text.plain.null-grammar"
     ]
-  autocomplete:
-    includeCompletionsFromAllBuffers: true
-  "atom-beautify":
-    _analyticsUserId: "ff2f3bf1-72d3-48d0-aea4-1bcdc620432f"
-    beautifyEntireFileOnSave: false
+  metrics:
+    userId: "f59cf66844f3900a7090147c78d587321b9ae40d"
   minimap:
+    adjustMinimapWidthToSoftWrap: false
     autoToggle: false
     displayMinimapOnLeft: true
-    adjustMinimapWidthToSoftWrap: false
-  linter:
-    lintOnEditorFocus: true
-    showHighlighting: true
-    lintOnFly: false
-    showErrorTabProject: false
-    showErrorTabFile: false
-    statusIconScope: "File"
-    statusIconPosition: "Right"
-    errorPanelHeight: 148
-  "view-tail-large-files":
-    fontFamily: "Menlo"
-    fontSize: 13
-  "ruby-test":
-    testFramework: "minitest"
-  "atom-pair":
-    pusher_app_key: "dd477c218a6d9c56b107"
-    pusher_app_secret: "83ca3dddc6e5821fb360"
-  "fuzzy-finder":
-    preserveLastSearch: true
-    useAlternateScoring: true
   "one-dark-ui":
     layoutMode: "Compact"
-  "autocomplete-plus":
-    confirmCompletion: "enter"
-  "atom-fuzzy-grep": {}
-  "git-projects":
-    rootPath: "/Users/goddamnhippie/Code"
-    sortBy: "Latest modification date"
-  "file-icons":
-    coloured: false
-  "linter-erb":
-    erbExecutablePath: "/usr/local/var/rbenv/shims/erb"
-  "linter-ruby": {}
   "one-light-ui": {}
   pigments:
     extendAutocompleteToVariables: true
     markerType: "dot"
-  "color-picker": {}
+  "ruby-test":
+    testFramework: "minitest"
   "theme-toggler":
-    darkUiTheme: "one-dark-ui"
     darkSyntaxTheme: "one-dark-syntax"
+    darkUiTheme: "one-dark-ui"
     lightSyntaxTheme: "one-light-syntax"
     lightUiTheme: "one-light-ui"
+  "tree-view":
+    hideIgnoredNames: true
+    showOnRightSide: true
+  "view-tail-large-files":
+    fontFamily: "Menlo"
+    fontSize: 13
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
 ".nginx.source":
   editor:
     preferredLineLength: 120

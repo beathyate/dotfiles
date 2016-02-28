@@ -33,6 +33,9 @@ function production {
 function staging {
   heroku "$@" -r staging;
 }
+function legacy {
+  heroku "$@" -r legacy;
+}
 
 # AWS autocompletion
 complete -C aws_completer aws
