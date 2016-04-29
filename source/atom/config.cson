@@ -98,6 +98,7 @@
     lightUiTheme: "one-light-ui"
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
     showOnRightSide: true
   "view-tail-large-files":
     fontFamily: "Menlo"

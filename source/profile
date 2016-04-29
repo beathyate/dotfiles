@@ -6,6 +6,8 @@ export EDITOR="/usr/local/bin/atom -w"
 export CODE_DIR="$HOME/Code"
 export GOPATH="$HOME/.go"
 export HOMEBREW_GITHUB_API_TOKEN="$(cat $HOME/.github_token)"
+export RUBYMOTION_ANDROID_SDK="$HOME/.rubymotion-android/sdk"
+export RUBYMOTION_ANDROID_NDK="$HOME/.rubymotion-android/ndk"
 
 # simplify prompt
 PS1="\n$ "
