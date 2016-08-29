@@ -21,7 +21,6 @@
       "atom-erb"
       "autocomplete-snippets"
       "autocomplete"
-      "linter-rubocop"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -33,6 +32,7 @@
       "tmp"
       ".repl_history"
     ]
+    openEmptyEditorOnStart: false
     projectHome: "/Users/goddamnhippie/Code"
     themes: [
       "one-dark-ui"
@@ -41,8 +41,9 @@
   editor:
     autoIndentOnPaste: false
     fontFamily: "Menlo"
+    fontSize: 13
     invisibles: {}
-    preferredLineLength: 120
+    preferredLineLength: 100
     showIndentGuide: true
     showInvisibles: true
     softWrapAtPreferredLineLength: true
@@ -52,6 +53,9 @@
   "file-icons":
     coloured: false
   "fuzzy-finder":
+    ignoredNames: [
+      "node_modules"
+    ]
     preserveLastSearch: true
     useAlternateScoring: true
   "git-projects":
@@ -68,6 +72,8 @@
     statusIconScope: "File"
   "linter-erb":
     erbExecutablePath: "/usr/local/var/rbenv/shims/erb"
+  "linter-rubocop":
+    command: "heroku local:run rubocop"
   "linter-ruby":
     rubyExecutablePath: "/Users/goddamnhippie/.rubies/ruby-2.3.0/bin/ruby"
   "markdown-preview":
