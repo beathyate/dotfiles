@@ -48,6 +48,7 @@ chruby $(cat ~/.ruby-version)
 # aliases
 alias lsl="pwd && ls -laGh"
 alias bx="bundle exec"
+alias gt="gittower"
 alias console="heroku local:run bin/rails console"
 alias generate="heroku local:run bin/rails generate"
 alias binrake="heroku local:run bin/rake"

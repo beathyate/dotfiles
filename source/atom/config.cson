@@ -41,7 +41,6 @@
   editor:
     autoIndentOnPaste: false
     fontFamily: "Menlo"
-    fontSize: 13
     invisibles: {}
     preferredLineLength: 100
     showIndentGuide: true
@@ -50,8 +49,7 @@
     useShadowDOM: true
   "exception-reporting":
     userId: "0414353d-9b58-5649-d050-8e64db395f53"
-  "file-icons":
-    coloured: false
+  "file-icons": {}
   "fuzzy-finder":
     ignoredNames: [
       "node_modules"
