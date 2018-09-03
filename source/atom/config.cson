@@ -33,16 +33,15 @@
       ".repl_history"
     ]
     openEmptyEditorOnStart: false
-    projectHome: "/Users/goddamnhippie/Code"
+    projectHome: "/Users/g14e/Code"
     themes: [
       "one-dark-ui"
       "solarized-dark-syntax"
     ]
   editor:
     autoIndentOnPaste: false
-    fontFamily: "Menlo"
+    fontFamily: "SF Mono"
     invisibles: {}
-    preferredLineLength: 100
     showIndentGuide: true
     showInvisibles: true
     softWrapAtPreferredLineLength: true
@@ -60,20 +59,16 @@
     rootPath: "/Users/goddamnhippie/Code"
     sortBy: "Latest modification date"
   linter:
-    errorPanelHeight: 148
     lintOnEditorFocus: true
-    lintOnFly: false
-    showErrorTabFile: false
-    showErrorTabProject: false
     showHighlighting: true
-    statusIconPosition: "Right"
-    statusIconScope: "File"
   "linter-erb":
     erbExecutablePath: "/usr/local/var/rbenv/shims/erb"
   "linter-rubocop":
     command: "heroku local:run rubocop"
   "linter-ruby":
     rubyExecutablePath: "/Users/goddamnhippie/.rubies/ruby-2.3.0/bin/ruby"
+  "linter-ui-default":
+    panelHeight: 69
   "markdown-preview":
     grammars: [
       "source.gfm"
@@ -87,8 +82,7 @@
     adjustMinimapWidthToSoftWrap: false
     autoToggle: false
     displayMinimapOnLeft: true
-  "one-dark-ui":
-    layoutMode: "Compact"
+  "one-dark-ui": {}
   "one-light-ui": {}
   pigments:
     extendAutocompleteToVariables: true
@@ -102,7 +96,6 @@
     lightUiTheme: "one-light-ui"
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
     showOnRightSide: true
   "view-tail-large-files":
     fontFamily: "Menlo"

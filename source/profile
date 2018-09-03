@@ -9,6 +9,7 @@ export GOPATH="$HOME/.go"
 export HOMEBREW_GITHUB_API_TOKEN="$(cat $HOME/.github_token)"
 export RUBYMOTION_ANDROID_SDK="$HOME/.rubymotion-android/sdk"
 export RUBYMOTION_ANDROID_NDK="$HOME/.rubymotion-android/ndk"
+export NVM_DIR="$HOME/.nvm"
 
 # simplify prompt
 PS1="\n$ "
@@ -45,6 +46,9 @@ source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 chruby $(cat ~/.ruby-version)
 
+# load nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
 # aliases
 alias lsl="pwd && ls -laGh"
 alias bx="bundle exec"
@@ -52,7 +56,7 @@ alias gt="gittower"
 alias console="heroku local:run bin/rails console"
 alias generate="heroku local:run bin/rails generate"
 alias binrake="heroku local:run bin/rake"
-alias start="heroku local:start"
+alias start="heroku local:start -f Procfile.dev"
 alias run="heroku local:run"
 alias migrate="heroku local:run bin/rails db:migrate"
 alias rollback="heroku local:run bin/rails db:rollback"
