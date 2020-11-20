@@ -1,11 +1,11 @@
 ## Requirements
 
-* A Mac
-* [Xcode.app][1] + `xcode-select --install`
-* [Posgres.app][2]
-* [homebrew][3]
-* `brew install rbenv ruby-build bundler`
-* [Heroku Toolbelt][4]
+- A Mac
+- [Xcode.app][1] + `xcode-select --install`
+- [Posgres.app][2]
+- [homebrew][3]
+- `brew install ruby-install chruby`
+- [Heroku Toolbelt][4]
 
 [1]: https://itunes.apple.com/pe/app/xcode/id497799835
 [2]: http://postgresapp.com

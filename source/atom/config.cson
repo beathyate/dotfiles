@@ -1,7 +1,8 @@
 "*":
   "atom-beautify":
-    _analyticsUserId: "ff2f3bf1-72d3-48d0-aea4-1bcdc620432f"
-    beautifyEntireFileOnSave: false
+    general:
+      _analyticsUserId: "ff2f3bf1-72d3-48d0-aea4-1bcdc620432f"
+      beautifyEntireFileOnSave: false
   "atom-fuzzy-grep": {}
   "atom-pair":
     pusher_app_key: "dd477c218a6d9c56b107"
@@ -31,17 +32,19 @@
       "log"
       "tmp"
       ".repl_history"
+      "node_modules"
     ]
     openEmptyEditorOnStart: false
     projectHome: "/Users/g14e/Code"
     themes: [
       "one-dark-ui"
-      "solarized-dark-syntax"
+      "base16-tomorrow-dark-theme"
     ]
   editor:
     autoIndentOnPaste: false
-    fontFamily: "SF Mono"
+    fontSize: 16
     invisibles: {}
+    preferredLineLength: 100
     showIndentGuide: true
     showInvisibles: true
     softWrapAtPreferredLineLength: true
@@ -64,7 +67,9 @@
   "linter-erb":
     erbExecutablePath: "/usr/local/var/rbenv/shims/erb"
   "linter-rubocop":
-    command: "heroku local:run rubocop"
+    command: "/Users/g14e/.gem/ruby/2.7.2/gems/rubocop-0.92.0/exe/rubocop"
+    disableWhenNoConfigFile: true
+    runExtraRailsCops: true
   "linter-ruby":
     rubyExecutablePath: "/Users/goddamnhippie/.rubies/ruby-2.3.0/bin/ruby"
   "linter-ui-default":
@@ -87,6 +92,11 @@
   pigments:
     extendAutocompleteToVariables: true
     markerType: "dot"
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      showInStatusBar: true
+    prettierEslintOptions: {}
   "ruby-test":
     testFramework: "minitest"
   "theme-toggler":
@@ -95,6 +105,7 @@
     lightSyntaxTheme: "one-light-syntax"
     lightUiTheme: "one-light-ui"
   "tree-view":
+    autoReveal: true
     hideIgnoredNames: true
     showOnRightSide: true
   "view-tail-large-files":

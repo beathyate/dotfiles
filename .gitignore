@@ -4,3 +4,4 @@ source/atom/packages
 source/atom/storage
 source/atom/blob-store
 source/atom/.apm
+/source/atom/.atom-socket-secret-*

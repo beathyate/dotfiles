@@ -1,0 +1,25 @@
+# chruby initializer
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+
+chruby $(cat ~/.ruby-version)
+
+# load nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# aliases
+alias lsl="pwd && ls -laGh"
+alias bx="bundle exec"
+alias gt="gittower"
+alias console="heroku local:run bin/rails console"
+alias generate="heroku local:run bin/rails generate"
+alias start="heroku local:start"
+alias run="heroku local:run"
+alias migrate="heroku local:run bin/rails db:migrate"
+alias rollback="heroku local:run bin/rails db:rollback"
+alias yolo="git push --force-with-lease"
+alias cdc="cd ~/Code"
+
+# bindings
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
