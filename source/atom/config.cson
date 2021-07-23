@@ -33,6 +33,10 @@
       "tmp"
       ".repl_history"
       "node_modules"
+      "public/packs"
+      "public/packs-test"
+      "js-coverage"
+      "coverage"
     ]
     openEmptyEditorOnStart: false
     projectHome: "/Users/g14e/Code"
@@ -42,7 +46,7 @@
     ]
   editor:
     autoIndentOnPaste: false
-    fontSize: 16
+    fontSize: 15
     invisibles: {}
     preferredLineLength: 100
     showIndentGuide: true
@@ -59,13 +63,15 @@
     preserveLastSearch: true
     useAlternateScoring: true
   "git-projects":
-    rootPath: "/Users/goddamnhippie/Code"
+    rootPath: "/Users/beathyate/Code"
     sortBy: "Latest modification date"
   linter:
     lintOnEditorFocus: true
     showHighlighting: true
   "linter-erb":
     erbExecutablePath: "/usr/local/var/rbenv/shims/erb"
+  "linter-eslint":
+    global: {}
   "linter-rubocop":
     command: "/Users/g14e/.gem/ruby/2.7.2/gems/rubocop-0.92.0/exe/rubocop"
     disableWhenNoConfigFile: true

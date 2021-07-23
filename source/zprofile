@@ -13,12 +13,13 @@ alias bx="bundle exec"
 alias gt="gittower"
 alias console="heroku local:run bin/rails console"
 alias generate="heroku local:run bin/rails generate"
-alias start="heroku local:start"
+alias start="heroku local:start -f Procfile.dev -p 5000"
 alias run="heroku local:run"
 alias migrate="heroku local:run bin/rails db:migrate"
 alias rollback="heroku local:run bin/rails db:rollback"
 alias yolo="git push --force-with-lease"
 alias cdc="cd ~/Code"
+alias sts="pwd && git status"
 
 # bindings
 bindkey "^[[A" history-beginning-search-backward
