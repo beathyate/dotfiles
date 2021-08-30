@@ -1,8 +1,9 @@
-export LOCAL_BIN="/usr/local/bin:/usr/local/sbin"
+export LOCAL_BIN="/opt/homebrew/bin"
 export POSTGRES_BIN="/Applications/Postgres.app/Contents/Versions/latest/bin"
 export XCODE_BIN="/Applications/Xcode.app/Contents/Developer/usr/bin"
-export PATH="$LOCAL_BIN:$POSTGRES_BIN:$XCODE_BIN:$PATH"
+# export PATH="$LOCAL_BIN:$POSTGRES_BIN:$XCODE_BIN:$PATH"
+# skipping Postgres until Postgres.app ships with full ARM support
+export PATH="$LOCAL_BIN:$XCODE_BIN:$PATH"
 export EDITOR="/usr/local/bin/atom -w"
 export HOMEBREW_GITHUB_API_TOKEN="$(cat $HOME/.github_token)"
 export NVM_DIR="$HOME/.nvm"
-export HEROKU_AC_PATH="$HOME/Library/Caches/heroku/autocomplete/bash_setup"

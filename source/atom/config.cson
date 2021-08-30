@@ -40,10 +40,6 @@
     ]
     openEmptyEditorOnStart: false
     projectHome: "/Users/g14e/Code"
-    themes: [
-      "one-dark-ui"
-      "base16-tomorrow-dark-theme"
-    ]
   editor:
     autoIndentOnPaste: false
     fontSize: 15
