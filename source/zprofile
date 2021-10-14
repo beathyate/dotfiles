@@ -1,19 +1,24 @@
 arch_name="$(uname -m)"
 
 if [ "${arch_name}" = "x86_64" ]; then
+  # load chruby
   source /usr/local/opt/chruby/share/chruby/chruby.sh
   source /usr/local/opt/chruby/share/chruby/auto.sh
+
+  # This loads nvm
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
 elif [ "${arch_name}" = "arm64" ]; then
+  # load chruby
   source /opt/homebrew/share/chruby/chruby.sh
   source /opt/homebrew/share/chruby/auto.sh
+
+  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"
 else
   echo "Unknown architecture: ${arch_name}"
 fi
 
 chruby $(cat ~/.ruby-version)
-
-# load nvm
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"
 
 # aliases
 alias lsl="pwd && ls -laGh"

@@ -76,6 +76,7 @@
     rubyExecutablePath: "/Users/goddamnhippie/.rubies/ruby-2.3.0/bin/ruby"
   "linter-ui-default":
     panelHeight: 69
+    showPanel: true
   "markdown-preview":
     grammars: [
       "source.gfm"
@@ -109,6 +110,7 @@
   "tree-view":
     autoReveal: true
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
     showOnRightSide: true
   "view-tail-large-files":
     fontFamily: "Menlo"
