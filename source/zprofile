@@ -11,11 +11,7 @@ chruby $(cat ~/.ruby-version)
 alias lsl="pwd && ls -laGh"
 alias bx="bundle exec"
 alias gt="gittower"
-alias console="heroku local:run bin/rails console"
-alias generate="heroku local:run bin/rails generate"
-alias start="heroku local:start -f Procfile.dev -p 5000"
-alias migrate="heroku local:run bin/rails db:migrate"
-alias rollback="heroku local:run bin/rails db:rollback"
+alias start="heroku local:start -f Procfile.dev"
 
 # bindings
 bindkey "^[[A" history-beginning-search-backward
