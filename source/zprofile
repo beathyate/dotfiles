@@ -1,22 +1,9 @@
-arch_name="$(uname -m)"
+# add homebrew to path
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
-if [ "${arch_name}" = "x86_64" ]; then
-  # load chruby
-  source /usr/local/opt/chruby/share/chruby/chruby.sh
-  source /usr/local/opt/chruby/share/chruby/auto.sh
-
-  # This loads nvm
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
-elif [ "${arch_name}" = "arm64" ]; then
-  # load chruby
-  source /opt/homebrew/share/chruby/chruby.sh
-  source /opt/homebrew/share/chruby/auto.sh
-
-  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"
-else
-  echo "Unknown architecture: ${arch_name}"
-fi
+# load chruby
+source /opt/homebrew/share/chruby/chruby.sh
+source /opt/homebrew/share/chruby/auto.sh
 
 chruby $(cat ~/.ruby-version)
 
@@ -27,12 +14,8 @@ alias gt="gittower"
 alias console="heroku local:run bin/rails console"
 alias generate="heroku local:run bin/rails generate"
 alias start="heroku local:start -f Procfile.dev -p 5000"
-alias run="heroku local:run"
 alias migrate="heroku local:run bin/rails db:migrate"
 alias rollback="heroku local:run bin/rails db:rollback"
-alias yolo="git push --force-with-lease"
-alias cdc="cd ~/Code"
-alias sts="pwd && git status"
 
 # bindings
 bindkey "^[[A" history-beginning-search-backward
