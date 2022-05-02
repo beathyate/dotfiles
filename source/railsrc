@@ -1,2 +1,5 @@
 --skip-bundle
+--skip-jbuilder
 -d postgresql
+-a propshaft
+-c tailwind
