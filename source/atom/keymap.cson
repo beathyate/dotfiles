@@ -1,4 +1,0 @@
-'.atom-text-editor':
-  'ctrl->': 'erb-snippets:erb_tags'
-'atom-workspace':
-  'ctrl-alt-p': 'fuzzy-grep:toggleLastSearch'
