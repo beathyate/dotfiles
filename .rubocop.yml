@@ -13,3 +13,5 @@ Style/MutableConstant:
   Enabled: false
 Style/StringLiterals:
   EnforcedStyle: double_quotes
+Style/ClassAndModuleChildren:
+  Enabled: false
