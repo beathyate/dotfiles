@@ -1,9 +1,22 @@
-# add homebrew to path
-eval "$(/opt/homebrew/bin/brew shellenv)"
+arch_name="$(uname -m)"
 
-# load chruby
-source /opt/homebrew/share/chruby/chruby.sh
-source /opt/homebrew/share/chruby/auto.sh
+if [ "${arch_name}" = "x86_64" ]; then
+  # add homebrew to path
+  eval "$(/usr/local/bin/brew shellenv)"
+  
+  # load chruby
+  source /usr/local/opt/chruby/share/chruby/chruby.sh
+  source /usr/local/opt/chruby/share/chruby/auto.sh
+elif [ "${arch_name}" = "arm64" ]; then
+  # load chruby
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+  
+  # load chruby
+  source /opt/homebrew/share/chruby/chruby.sh
+  source /opt/homebrew/share/chruby/auto.sh
+else
+  echo "Unknown architecture: ${arch_name}"
+fi
 
 chruby $(cat ~/.ruby-version)
 
