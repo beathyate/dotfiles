@@ -1,4 +1,5 @@
-export PATH="/Applications/Xcode.app/Contents/Developer/usr/bin:$PATH"
+export PG_BIN="/usr/local/opt/postgresql@15/bin"
+export PATH="/Applications/Xcode.app/Contents/Developer/usr/bin:$PG_BIN:$PATH"
 export HOMEBREW_GITHUB_API_TOKEN="$(cat $HOME/.github_token)"
 export CDPATH=".:$HOME/Code"
 export EDITOR="/usr/local/bin/nova"
