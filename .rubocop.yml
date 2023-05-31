@@ -3,6 +3,8 @@ Metrics/MethodLength:
   Enabled: false
 Metrics/BlockLength:
   Enabled: false
+Metrics/ClassLength:
+  Enabled: false
 Style/Documentation:
   Enabled: false
 Style/Encoding:
@@ -19,3 +21,5 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 Style/Documentation:
   Enabled: false
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented_relative_to_receiver
