@@ -1,24 +1,14 @@
-arch_name="$(uname -m)"
+# load homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
-if [ "${arch_name}" = "x86_64" ]; then
-  # add homebrew to path
-  eval "$(/usr/local/bin/brew shellenv)"
-  
-  # load chruby
-  source /usr/local/opt/chruby/share/chruby/chruby.sh
-  source /usr/local/opt/chruby/share/chruby/auto.sh
-elif [ "${arch_name}" = "arm64" ]; then
-  # load chruby
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-  
-  # load chruby
-  source /opt/homebrew/share/chruby/chruby.sh
-  source /opt/homebrew/share/chruby/auto.sh
-else
-  echo "Unknown architecture: ${arch_name}"
-fi
+# load chruby
+source /opt/homebrew/share/chruby/chruby.sh
+source /opt/homebrew/share/chruby/auto.sh
 
 chruby $(cat ~/.ruby-version)
+
+# add make binaries to path for some reason doesn't work on zshenv
+export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
 
 # aliases
 alias lsl="pwd && ls -laGh"

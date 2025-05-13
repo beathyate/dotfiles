@@ -1,8 +1,11 @@
-export PG_BIN="/usr/local/opt/postgresql@15/bin:/opt/homebrew/opt/postgresql@15/bin"
-export PATH="/Applications/Xcode.app/Contents/Developer/usr/bin:$PG_BIN:$PATH"
+export PG_BIN="/opt/homebrew/opt/postgresql@15/bin"
+export MYSQL_BIN="/opt/homebrew/opt/mysql-client@8.0/bin"
+export XCODE_BIN="/Applications/Xcode.app/Contents/Developer/usr/bin"
+export PATH="$XCODE_BIN:$PG_BIN:$MYSQL_BIN:$PATH"
 export HOMEBREW_GITHUB_API_TOKEN="$(cat $HOME/.github_token)"
 export BUNDLE_RUBYGEMS__PKG__GITHUB__COM="$(cat $HOME/.github_token)"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/libpq/lib/pkgconfig"
 export CDPATH=".:$HOME/Code"
-export EDITOR="/usr/local/bin/nova"
+export EDITOR="/usr/local/bin/zed"
 export DISABLE_SPRING=true
 export RUBY_YJIT_ENABLE=true
